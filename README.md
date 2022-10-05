@@ -58,7 +58,8 @@ If you need to run Windows for a long time, be sure to use as few resources as p
 ---
 
 ### Self-start Windows virtual machine at boot
-````
+
+
 #Edit /etc/rc.local
 Add a new line before exit 0 and paste the following code (the specific configuration can be modified by yourself)
 
