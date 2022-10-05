@@ -1,7 +1,7 @@
 #Clickit
 ## OpenVZ virtualization (architecture) VPS clickit installation of Windows systems
 
-The test environment is Debian7 (in theory, most systems in the Debian Ubuntu series are supported)
+The test environment is Debian10 (in theory, most systems in the Debian Ubuntu series are supported)
 
 ````
 wget -N --no-check-certificate https://github.com/meocloud1/clickit_win/blob/main/win.sh && chmod +x win.sh && bash win.sh
