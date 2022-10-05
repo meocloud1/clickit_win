@@ -83,4 +83,3 @@ If there is return content, the mapping is normal
 -vnc :2 enable vnc remote access where: 2 identifies the vnc port
 -net nic,model=virtio -net user means that the network is in NAT mode. OpenVZ acts as a gateway and firewall for virtual machines
 -redir tcp:3389::3389 Redirects port 3389 of the virtual machine to the host's network interface
-````
