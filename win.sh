@@ -102,7 +102,7 @@ local_ip=`curl -4 ip.sb`
 clear
 echo "---------------------------------------"
 echo "Prompt: Qemu+WindowsXP virtual machine installed successfully"
-echo "WindowsXP default boot memory 512M hard disk 4G"
+echo "WindowsXP default boot memory 700M hard disk 25G"
 echo "Remote desktop address: ${local_ip}:3389 not started"
 echo "---------------------------------------"
 echo ""
@@ -286,17 +286,17 @@ echo "Enter the RAM value to be set, for example: 1024"
 echo "---------------------------------------"
 echo ""
 
-read -e -p "please enter (Default size 512):" nram
-[[ -z ${nram} ]] && nram="512"
+read -e -p "please enter (Default size 700):" nram
+[[ -z ${nram} ]] && nram="700"
 
 echo ""
 echo "---------------------------------------"
-echo "Enter the hard disk value to be set, for example: 10"
+echo "Enter the hard disk value to be set, for example: 25"
 echo "---------------------------------------"
 echo ""
 
-read -e -p "please enter (Default size 10):" ndisk
-[[ -z ${ndisk} ]] && ndisk="10"
+read -e -p "please enter (Default size 25):" ndisk
+[[ -z ${ndisk} ]] && ndisk="25"
 
 }
 
@@ -394,14 +394,14 @@ echo " 3. Use Windows VNC client to connect to the remote desktop"
 echo ""
 echo " a.VNC server address: ${local_ip}:1"
 echo "Windows client download address:"
-echo "https://github.com/dylanbai8/Onekey_OpenVZ_Install_Windows/raw/master/VNC-4.0-x86_CN.exe"
+echo "https://github.com/meocloud1/clickit_win/blob/main/VNC-Viewer-6.22.515-Windows.exe"
 echo ""
 echo " b. Open the terminal (Terminal) in the VNC desktop and execute the following command: "
 echo ""
 echo "bash win.sh windows"
 echo ""
 echo "Note: This command must be executed from within a VNC remote desktop"
-echo "Follow the prompts to set the virtual machine memory and hard disk size, the default is 700M memory and 10G hard disk"
+echo "Follow the prompts to set the virtual machine memory and hard disk size, the default is 700M memory and 25G hard disk"
 echo "After installing the system according to the prompt: 1. My computer-right-click properties-allow remote desktop 2.Add power-on password"
 echo ""
 echo "After debugging is completed, return to the shell and execute the script to start VNC to run the new Windows system in the background"
@@ -422,7 +422,7 @@ menu
 # install menu
 menu(){
 echo "---------------------------------------"
-echo " 1. One-click installation of Lxde+VNC remote desktop"
+echo " 1. Clickit-win installation of Lxde+VNC remote desktop"
 echo " 2. Add Firefox browser and Simplified Chinese font"
 echo ""
 echo " 3. Clickit installation of Qemu+WindowsXP virtual machine"
