@@ -63,9 +63,9 @@ If you need to run Windows for a long time, be sure to use as few resources as p
 Edit /etc/rc.local
 Add a new line before exit 0 and paste the following code (the specific configuration can be modified by yourself)
 
-``
+````
 qemu-system-x86_64 -hda /root/IMG/win.img -m 700M -smp 1 -daemonize -vnc :2 -net nic,model=virtio -net user -redir tcp:3389::3389
-``
+````
 
 【Modify port mapping】
 The default host only forwards the 3389 port of the remote desktop to the Windows system. If it is used to run programs (such as building a website), you may need to forward ports such as 80, 443, 22, etc.
