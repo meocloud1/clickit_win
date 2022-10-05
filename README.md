@@ -60,14 +60,14 @@ If you need to run Windows for a long time, be sure to use as few resources as p
 ### Self-start Windows virtual machine at boot
 
 
-#Edit /etc/rc.local
+Edit /etc/rc.local
 Add a new line before exit 0 and paste the following code (the specific configuration can be modified by yourself)
 
 ``
 qemu-system-x86_64 -hda /root/IMG/win.img -m 700M -smp 1 -daemonize -vnc :2 -net nic,model=virtio -net user -redir tcp:3389::3389
 ``
 
-#【Modify port mapping】
+【Modify port mapping】
 The default host only forwards the 3389 port of the remote desktop to the Windows system. If it is used to run programs (such as building a website), you may need to forward ports such as 80, 443, 22, etc.
 Just modify the end to add multiple ports, such as: -redir tcp:3389::3389 -redir tcp:443::443 -redir tcp:80::80
 The specific format is -redir [tcp|udp]:host-port::guest-port
@@ -76,7 +76,7 @@ Check whether the port is properly mapped:
 lsof -i:"3389"
 If there is return content, the mapping is normal
 
-#【Modify other configuration】
+【Modify other configuration】
 -m 700M means the memory is 700M
 -smp 2 means use two CPU cores
 -daemonize runs the virtual machine in the background
