@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #=======================================================
-# System Request: Debian/Ubuntu
-# Author: meocloud1
-# Description: OpenVZ VPS - Windows
-# Open Source: https://github.com/meocloud1/clickit_win
+# 	System Request: Debian/Ubuntu
+# 	Author: meocloud1
+# 	Description: OpenVZ VPS - Windows
+# 	Open Source: https://github.com/meocloud1/clickit_win
 #=======================================================
 
 
