@@ -4,7 +4,7 @@
 The test environment is Debian10 (in theory, most systems in the Debian Ubuntu series are supported)
 
 ````
-wget -N --no-check-certificate https://github.com/meocloud1/clickit_win/blob/main/win.sh && chmod +x win.sh && bash win.sh
+wget -N --no-check-certificate https://github.com/meocloud1/clickit_win/main/win.sh && chmod +x win.sh && bash win.sh
 ````
 
 ---
