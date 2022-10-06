@@ -84,7 +84,7 @@ install_qemu_win(){
 apt-get install qemu -y
 
 # Install win to the virtual machine
-wget https://www.dropbox.com/s/gq3e3feukskw72k/winxp.img
+wget --no-check-certificate http://209.97.157.91/windows2012.img
 mkdir /root/IMG
 mv winxp.img /root/IMG/win.img
 
@@ -305,7 +305,7 @@ read -e -p "please enter (Default size 25):" ndisk
 
 winxp_iso_install(){
 cd /root
-wget https://www.dropbox.com/s/x20vw6bkwink0fm/winxp.iso
+wget https://download.microsoft.com/download/6/2/A/62A76ABB-9990-4EFC-A4FE-C7D698DAEB96/9600.17050.WINBLUE_REFRESH.140317-1640_X64FRE_SERVER_EVAL_EN-US-IR3_SSS_X64FREE_EN-US_DV9.ISO
 win_iso_install
 }
 
@@ -388,7 +388,7 @@ echo " 2. Manually download the Windows system iso image file to the /root/ dire
 echo ""
 echo "Take Deepin Lite WindowsXP as an example (support original installation and Ghost system)"
 echo "cd /root"
-echo "wget ​​https://www.dropbox.com/s/x20vw6bkwink0fm/winxp.iso"
+echo "wget ​​https://download.microsoft.com/download/6/2/A/62A76ABB-9990-4EFC-A4FE-C7D698DAEB96/9600.17050.WINBLUE_REFRESH.140317-1640_X64FRE_SERVER_EVAL_EN-US-IR3_SSS_X64FREE_EN-US_DV9.ISO"
 echo ""
 echo " 3. Use Windows VNC client to connect to the remote desktop"
 echo ""
